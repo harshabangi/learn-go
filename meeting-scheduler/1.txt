@@ -1,0 +1,28 @@
+There are n given meeting rooms
+Book a meeting in any meeting room at given interval (start time, end time, capacity)
+Send notification to all the persons who are invited to the meeting
+History of meetings in a room should be stored.
+
+1. User
+2. Room
+3. MeetingManager
+4. Meeting
+
+1. User - ID, Name, phoneNumber
+   createMeeting(m Meeting)
+   updateMeeting(meetingID, m meeting)
+2. Room - ID, Name, Capacity
+3. Meeting - ID, RoomID, Agenda, Date, StartTime, EndTime, List<Users> users, createdBy, createdAt, updatedAt
+4. Meeting Room Manager
+   Rooms List<Rooms>
+5. Meeting Manager
+   1. meetings List<Meeting>
+   2. CreateMeeting should send invites to all the users
+   3. UpdateMeeting
+
+   create meeting -
+    isRoom available? - date, (start_time, end time, capacity)
+    => select * from room where capacity >= ? list of room ids
+    => if no rows not available
+    => select distinct room_id from meeting where room_id IN (?, ?, ?) AND date = ? AND (start_time
+

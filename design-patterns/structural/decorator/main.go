@@ -2,7 +2,6 @@ package main
 
 import (
 	"fmt"
-	"time"
 )
 
 /*
@@ -36,10 +35,6 @@ type TomatoTopping struct {
 
 func (t *TomatoTopping) GetPrice() int64 {
 	return 1 + t.pizza.GetPrice()
-}
-
-type Y struct {
-	T *time.Time `json:"t"`
 }
 
 func main() {
