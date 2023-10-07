@@ -1,4 +1,4 @@
-package go_data_structures
+package data_structures
 
 type Stack[T any] []T
 
