@@ -1,4 +1,4 @@
-package go_data_structures
+package data_structures
 
 type Queue[T any] []T
 
